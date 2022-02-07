@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show_Result</title>
+</head>
+<body>
+    <div id="container" style="height: 400px; width:600px ; margin: 0 auto;border: 2px solid black;">
+        <h2  style="text-decoration: underline;"  >Submitted Info </h2>
+        <p >Name:        {{name}} </style> </p><br>
+        <p>Dojo Location:       {{location}}</p><br>
+        <p>Favorite Language:       {{Language}}</p><br>
+        <p>Comment:     {{Comment}}</p>
+        <form action="/" method="post">
+        <button style="width: 90px;height: 30px; background-color: #76a5af;box-shadow: 3px 5px black; display: flex;align-items: center;justify-content: center;color: white;
+        font-size: 20px; position: relative;left: 490px;top: 25px; border: 2px black solid;">go back</button>
+        {% csrf_token %}
+    </form>
+
+    </div>
+    
+</body>
+</html>
