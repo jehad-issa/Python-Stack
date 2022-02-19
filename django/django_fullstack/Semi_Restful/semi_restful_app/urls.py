@@ -8,6 +8,4 @@ urlpatterns = [
     path('show/<int:edit_id>/edit', views.update , name='update'),
     path('print/<int:edit_id>/edit',views.edit ),
     path('delet/<int:delet_id>/edit',views.delet )
-
-
 ]
